@@ -439,3 +439,102 @@ certi button:active
   font-size: medium;
   margin-left: 800px;
 }
+/* -----------------------------------
+📱 Mobile Responsiveness (max-width 768px)
+----------------------------------- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .box2,
+  .cont-ed,
+  .pro,
+  .cert-image {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .name,
+  .degree,
+  .task,
+  .task-desc,
+  .tech,
+  .thanks,
+  .cert-group,
+  .cert-img {
+    width: 90%;
+    text-align: center;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .button-group,
+  .but {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button-group button,
+  .but button {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .icon-section,
+  .icon-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .fab, .fas {
+    font-size: 2.5rem !important;
+  }
+
+  .cert-img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+    margin: 0 8px;
+  }
+
+  .scrollTopBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    z-index: 999;
+  }
+}
