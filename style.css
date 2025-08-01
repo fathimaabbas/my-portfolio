@@ -365,9 +365,9 @@ certi button:active
   height: 500px;
   display: block;
   margin: 20px auto;
-  border: 3px solid #ddd;
+  border: 3px solid violet;
   border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(21, 216, 216, 0.3);
+  box-shadow: 0 6px 18px rgba(141, 21, 216, 0.3);
   transition: 0.3s;
 }
 
