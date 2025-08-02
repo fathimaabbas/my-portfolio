@@ -1,276 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fathima's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body class="bg-[#020e2c] font-sans text-white">
 
+  <!-- Header -->
+  <header class="text-center p-6">
+    <h1 class="text-4xl font-bold text-blue-400">MY PORTFOLIO</h1>
+  </header>
 
-</head>
-<body>
-    <div class="content">
-    <div class="text">
-    <h1 id="head">
-        MY PORTFOLIO
-    </h1>
+  <!-- About Section -->
+  <section class="flex flex-col md:flex-row items-center justify-center p-6 gap-10">
+    <div class="h-52 w-52 bg-cover bg-center rounded-full border-4 border-blue-400" style="background-image: url('mypic.jpg');"></div>
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-semibold text-cyan-400 mb-2">About Me</h2>
+      <p class="text-sm md:text-base leading-relaxed">
+        A passionate Full Stack Developer and B.Tech student, I enjoy building responsive and user-friendly applications using Node.js, React, MongoDB, and Express.js. I love solving real-world problems with code and I'm excited about backend systems and AI integration.
+      </p>
     </div>
-    <div class="box2">
-    <div class="photo">
+  </section>
+
+  <!-- Education -->
+  <section class="p-6">
+    <h2 class="text-center text-2xl text-blue-300 font-semibold mb-6">Education</h2>
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      <div class="p-4 border border-purple-500 rounded-lg shadow-md transform hover:scale-110 transition duration-300 bg-[#020e2c]">
+        <h3 class="text-lg font-bold">BTech in Computer Science</h3>
+        <p class="text-sm">Federal Institute of Science and Technology</p>
+        <p class="text-xs">Expected 2027</p>
+        <p class="text-sm text-cyan-300">CGPA: 9.3</p>
+      </div>
+      <div class="p-4 border border-purple-500 rounded-lg shadow-md transform hover:scale-110 transition duration-300 bg-[#020e2c]">
+        <h3 class="text-lg font-bold">XII - Computer Science</h3>
+        <p class="text-sm">Holyghost Convent Girls HS</p>
+        <p class="text-xs">2021–2023</p>
+        <p class="text-sm text-cyan-300">99.3%</p>
+      </div>
+      <div class="p-4 border border-purple-500 rounded-lg shadow-md transform hover:scale-110 transition duration-300 bg-[#020e2c]">
+        <h3 class="text-lg font-bold">SSLC</h3>
+        <p class="text-sm">Christava Mahilalayam High School</p>
+        <p class="text-xs">2020</p>
+        <p class="text-sm text-cyan-300">10 A+</p>
+      </div>
     </div>
-    <div class="name">
-        <h1 id="name">About Me</h1>
-        <h2>Hi!, Iam Fathima Abbas</h2>
-        <p>"" A passionate Full Stack Developer and B.Tech student who loves turning ideas into web applications. I enjoy building clean, efficient, and user-friendly websites using technologies like Node.js, React, MongoDB, and Express.js.
+  </section>
 
-I'm particularly interested in creating impactful platforms—whether it's a task tracker to boost productivity or a smart waste management solution like Bin It Right. I thrive on solving real-world problems through code.
-
-Currently, I'm exploring the world of backend systems and AI integration in web development. I'm actively seeking opportunities to collaborate, intern, or join a tech team where I can continue learning and contributing.
-
-""</p>
+  <!-- Skills -->
+  <section class="p-6">
+    <h2 class="text-center text-2xl text-blue-300 font-semibold mb-4">Technical Skills</h2>
+    <div class="flex justify-center flex-wrap gap-6 text-white text-4xl">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-node-js"></i>
+      <i class="fas fa-server"></i>
+      <i class="fas fa-database"></i>
     </div>
-    </div>
-    <div class="education">
-        <div class="ed">
-            <h1>Education</h1>
-        </div>
-         <div class="cont-ed">
-        <div class="degree">
-            <div class="year">
-            <h1 id="head1">Expected 2027</h1>
-            </div>
-            <h3 id="head2">Federal Institute of Science and Technology</h3>
-            <h2 id="head3">BTech in Computer Science</h2>
-            <h3 id="head4">cgpa : 9.3</h3>
+  </section>
 
-        </div>
-         <div class="degree">
-            <div class="year">
-            <h1 id="head1">2021-2023</h1>
-            </div>
-            <h3 id="head2">Holyghost Convent Girls HS</h3>
-            <h2 id="head3">XII - Computer Science</h2>
-            <h3 id="head4">99.3%</h3>
+  <!-- Projects -->
+  <section class="p-6">
+    <h2 class="text-center text-2xl text-blue-300 font-semibold mb-6">Projects</h2>
+    <div class="flex flex-col gap-6">
 
-        </div>
-         <div class="degree" id="dig">
-            <div class="year">
-            <h1 id="head1">2020 passout</h1>
-            </div>
-            <h3 id="head2">Christava Mahilalayam High School</h3>
-            <h2 id="head3">SSLC</h2>
-            <h3 id="head4">10 A+</h3>
+      <!-- Task Tracker -->
+      <div class="p-4 bg-[#111827] border border-purple-600 rounded-lg hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold">Task Tracker</h3>
+        <p class="text-sm mt-2">A productivity app with task management and daily streak tracking.</p>
+        <p class="text-sm text-cyan-400 mt-2">Tech: HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
+        <a class="text-sm text-blue-400 underline mt-2 inline-block" href="https://github.com/fathimaabbas/Task-Tracker">View Code</a>
+      </div>
 
-        </div>
-        </div>
-        
-        
-  
-    </div>
-    <div class="skill">
-        <div class="ed">
-            <h1>Technical Skills</h1>
-        </div>
-      
-<!-- Buttons -->
-<div class="button-group">
-  <button id="frontendBtn">Frontend</button>
-  <button id="backendBtn">Backend</button>
-  <button id="databaseBtn">Database</button>
-</div>
+      <!-- Bin It Right -->
+      <div class="p-4 bg-[#111827] border border-purple-600 rounded-lg hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold">Bin It Right</h3>
+        <p class="text-sm mt-2">A smart waste management platform with image classification, alerts, and recycler tools.</p>
+        <p class="text-sm text-cyan-400 mt-2">Tech: Node.js, Express.js, ML, MongoDB, Python</p>
+      </div>
 
-<!-- Icon Sections -->
-<div id="iconSection" class="icon-section">
-  <!-- Frontend Icons -->
-  <div id="frontendIcons" class="icon-group">
-    <i class="fab fa-html5 fa-3x"></i>
-    <i class="fab fa-css3-alt fa-3x"></i>
-    <i class="fab fa-js fa-3x"></i>
-    <i class="fab fa-react fa-3x"></i>
-  </div>
+      <!-- Amazon Clone -->
+      <div class="p-4 bg-[#111827] border border-purple-600 rounded-lg hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold">Amazon Clone</h3>
+        <p class="text-sm mt-2">A frontend replica of Amazon with product listings and UI features.</p>
+        <p class="text-sm text-cyan-400 mt-2">Tech: HTML, CSS, JavaScript</p>
+      </div>
 
-  <!-- Backend Icons -->
-  <div id="backendIcons" class="icon-group">
-    <i class="fab fa-node-js fa-3x"></i>
-    <i class="fas fa-server fa-3x"></i> <!-- Represent Express.js -->
-  </div>
+    </div>
+  </section>
 
-  <!-- Database Icons -->
-  <div id="databaseIcons" class="icon-group">
-    <i class="fas fa-database fa-3x"></i> <!-- Represent MongoDB -->
-  </div>
-</div>
-<div class="projects">
-    <div class="ed">
-        <h1>My projects</h1>
-    </div>
-    <div class="pro">
-    <div class="task">
-    <button id="task">Task-Tracker</button>
-    <div class="task-desc">
-        <p>This is a full-stack productivity app where users can manage their daily tasks efficiently. The application allows users to add new tasks, mark them as complete, and delete them. It also features a daily streak system that tracks user consistency — rewarding streak points when at least one task is completed each day.</p>
-    </div>
-    <div class="tech">
-        <div class="icon">
-            <h1>Techstack used</h1>
-            <div class="ico">
-             <i class="fab fa-html5 fa-3x"></i>
-             <i class="fab fa-css3-alt fa-3x"></i>
-             <i class="fab fa-js fa-3x"></i>
-             <i class="fab fa-node-js fa-3x"></i>
-             <i class="fas fa-server fa-3x"></i>
-             <i class="fas fa-database fa-3x"></i>
-            </div>
-            <div class="git">
-               <i class="fab fa-github fa-2x"></i>
-               <a href="https://github.com/fathimaabbas/Task-Tracker.git">view my code</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="task">
-    <button id="waste">Binitright!</button>
-    <div class="task-desc">
-        <p>Bin It Right – Smart Waste Management Platform
-Bin It Right is a full-stack platform that promotes smart and sustainable waste disposal. It includes:<br>
-
-📸Waste classification using camera input and ML model<br>
-
-📢Community waste alert system<br>
-
-🔄Recycler connections and eco-awareness quizzes
-
-</p>
-    </div>
-    <div class="tech">
-        <div class="icon">
-
-            <div class="wasteico">
-            <i class="fab fa-html5" style="font-size: 50px;"></i>
-<i class="fab fa-css3-alt" style="font-size: 50px;"></i>
-<i class="fab fa-js" style="font-size: 50px;"></i>
-<i class="fab fa-node-js" style="font-size: 50px;"></i>
-<i class="fas fa-server" style="font-size: 50px;"></i>
-<i class="fas fa-database" style="font-size: 50px;"></i>
-<i class="fas fa-chart-line" style="font-size: 50px;"></i>
-<i class="fab fa-python" style="font-size: 50px;"></i>
-</div>
-
-        </div>
-    </div>
-    </div>
-    <div class="task">
-    <button id="amazon">Amazon-Clone</button>
-    <div class="task-desc">
-        <p>A frontend replica of Amazon built using HTML, CSS, and JavaScript, featuring product listings, navbar.</p>
-    </div>
-    <div class="icon">
-     <i class="fab fa-html5" style="font-size: 50px;"></i>
-<i class="fab fa-css3-alt" style="font-size: 50px;"></i>
-</div>
-    </div>
-    </div>
-</div>
-<div class="certi">
-  <div class="ed">
-    <h1>Certifications</h1>
-  </div>
+ 
+  <div class="certi text-center py-10">
+  <h2 class="text-3xl font-bold text-white mb-6">Certifications</h2>
 
   <!-- Buttons -->
-  <div class="but">
-    <button onclick="showcert('nptel-group')">NPTEL</button>
-    <button onclick="showcert('javascript-group')">JavaScript</button>
-    <button onclick="showcert('accenture-group')">Software Engineer</button>
-    <button onclick="showcert('hackathon-group')">Hackathon</button>
+  <div class="flex flex-wrap justify-center gap-4 mb-8">
+    <button onclick="showcert('nptel-group')" class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-800 transition">NPTEL</button>
+    <button onclick="showcert('hackathon-group')" class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-800 transition">Hackathon</button>
+    <button onclick="showcert('accenture-group')" class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-800 transition">Accenture</button>
+    <button onclick="showcert('js-group')" class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-800 transition">JavaScript</button>
   </div>
 
   <!-- Certificate Groups -->
-  <div class="cert-image">
-
-    <!-- NPTEL (2 certificates) -->
-    <div id="nptel-group" class="cert-group">
-      <img class="cert-img" src="certificates/nptel1.png" alt="NPTEL Certificate 1">
-      <img class="cert-img" src="certificates/nptel2.png" alt="NPTEL Certificate 2">
-    </div>
-
-    <!-- JavaScript -->
-    <div id="javascript-group" class="cert-group">
-      <img class="cert-img" src="certificates/infosys.png" alt="JavaScript Certificate">
-    </div>
-
-    <!-- Accenture -->
-    <div id="accenture-group" class="cert-group">
-      <img class="cert-img" src="certificates/accenture.png" alt="Accenture Certificate">
-    </div>
-
-    <!-- Hackathon (2 certificates) -->
-    <div id="hackathon-group" class="cert-group">
-      <img class="cert-img" src="certificates/hackathon1.png" alt="Hackathon Certificate 1">
-    </div>
-    
+  <div id="nptel-group" class="cert-group hidden flex flex-col items-center gap-6">
+    <img src="certificates/nptel1.png" class="cert-img w-full max-w-md rounded shadow-lg" />
+    <img src="certificates/nptel2.png" class="cert-img w-full max-w-md rounded shadow-lg" />
   </div>
+
+  <div id="hackathon-group" class="cert-group hidden flex flex-col items-center gap-6">
+    <img src="certificates/hackathon1.png" class="cert-img w-full max-w-md rounded shadow-lg" />
+  </div>
+
+  <div id="accenture-group" class="cert-group hidden flex flex-col items-center gap-6">
+    <img src="certificates/accenture.png" class="cert-img w-full max-w-md rounded shadow-lg" />
+  </div>
+
+  <div id="js-group" class="cert-group hidden flex flex-col items-center gap-6">
+    <img src="certificates/infosys.png" class="cert-img w-full max-w-md rounded shadow-lg"/>
 </div>
 
 
-<div class="thanks">
-  <h2>Thanks for visiting my portfolio! 🙏</h2>
-  <p>I’m always excited to collaborate or work on meaningful projects.  
-     Feel free to reach out — I’d love to connect!</p>
-  </div>
-
-    <footer class="footer">
-  <p>© 2025 Fathima Abbas | Made with ❤️</p>
-  <div class="social-links">
-    <a href="https://github.com/fathimaabbas" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="http://www.linkedin.com/in/fathima-abbas" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:fathimaabbas101@gmail.com"><i class="fas fa-envelope"></i></a>
-  </div>
-</footer>
-</div>
-<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scrollTopBtn">↑ Top</button>
-
-<script>
-  const frontendBtn = document.getElementById("frontendBtn");
-  const backendBtn = document.getElementById("backendBtn");
-  const databaseBtn = document.getElementById("databaseBtn");
-
-  const frontendIcons = document.getElementById("frontendIcons");
-  const backendIcons = document.getElementById("backendIcons");
-  const databaseIcons = document.getElementById("databaseIcons");
-
-  function showIcons(selectedGroup) {
-    // Hide all icon groups
-    frontendIcons.classList.remove("visible");
-    backendIcons.classList.remove("visible");
-    databaseIcons.classList.remove("visible");
-
-    // Scroll into view & show selected
-    selectedGroup.classList.add("visible");
-   
-  }
-
-  frontendBtn.addEventListener("click", () => showIcons(frontendIcons));
-  backendBtn.addEventListener("click", () => showIcons(backendIcons));
-  databaseBtn.addEventListener("click", () => showIcons(databaseIcons));
-</script>
+  <!-- Footer -->
+  <footer class="bg-[#0b0c1e] text-center text-gray-300 p-6 mt-6">
+    <p>&copy; 2025 Fathima Abbas | Made with ❤️</p>
+    <div class="mt-2 flex justify-center gap-6 text-2xl">
+      <a href="https://github.com/fathimaabbas" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/fathima-abbas" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:fathimaabbas101@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 <script>
   function showcert(groupId) {
-    // Hide all groups
-    const groups = document.querySelectorAll(".cert-group");
-    groups.forEach(group => group.style.display = "none");
+    const groups = document.querySelectorAll('.cert-group');
+    groups.forEach(group => group.classList.add('hidden')); // Hide all
 
-    // Show the selected group
     const selectedGroup = document.getElementById(groupId);
     if (selectedGroup) {
-      selectedGroup.style.display = "block";
+      selectedGroup.classList.remove('hidden'); // Show selected
       selectedGroup.scrollIntoView({ behavior: "smooth" });
     }
   }
 </script>
-
 
 
 </body>
